@@ -7,6 +7,11 @@ namespace Pelicula
     public class Pelicula
     {
         //Campos
+        public string titulo;
+        public Int16 año;
+        public string pais;
+        public string  director;
+
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
@@ -45,7 +50,10 @@ namespace Pelicula
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            string titulo ="the while";
+            Int16 año = 2023;
+            string pais = "E.E.U";
+            string  director = "Darren Aronofsky";
         }
     }
 }
