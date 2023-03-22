@@ -13,9 +13,11 @@ namespace Pelicula
         private string  director;
 
         private List<Actor> actores = new List<Actor>();
+        actor.add( new Actor("Ryan Gosling", 1980));
 
         //Constructores
-     
+        public Pelicula(){}
+        public Pelicula(string titulo, Int16 año){this.titulo=titulo; this.año=año;}
         //Métodos
          public string GetTitulo(){return titulo;}
          public void SetTitulo(string t){titulo=t;}
@@ -28,8 +30,8 @@ namespace Pelicula
      
         public void Imprime()
         {
-            Console.WriteLine($"{Nombre} ({Año})");
-     //       Console.WriteLine($"{titulo} ({año})");
+            Console.WriteLine($"{titulo} ({año})");
+     //     Console.WriteLine($"{titulo} ({año})");
         }
 
 
@@ -58,7 +60,14 @@ namespace Pelicula
 
         static void Main(string[] args)
         {
-           Pelicula p1 = new Pelicula();
+            List<Pelicula> pelicula = new List<Pelicula>();
+            pelicula.Add( new Pelicula("La ballena", 2022));
+            pelicula.Add( new Pelicula("Todo en todas partes", 2022));
+            pelicula.Add( new Pelicula("Pinocho", 2022));
+            pelicula.Add( new Pelicula("Ant man", 2023));
+            pelicula.Add( new Pelicula("La trinchera", 2022));
+
+            Pelicula p1 = new Pelicula();
             p1.SetTitulo("La La Land");
             p1.SetAño(2016);
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
