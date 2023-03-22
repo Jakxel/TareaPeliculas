@@ -20,8 +20,8 @@ namespace Pelicula
      
         public void Imprime()
         {
+            Console.WriteLine($"{titulo} ({ano})");
      //       Console.WriteLine($"{titulo} ({año})");
-
         }
 
 
@@ -29,7 +29,7 @@ namespace Pelicula
 
     public class Actor
     {
-        //Propiedades
+        //Propiedadedes
 
         //Constructores
 
@@ -50,10 +50,6 @@ namespace Pelicula
 
         static void Main(string[] args)
         {
-            string titulo ="the while";
-            Int16 año = 2023;
-            string pais = "E.E.U";
-            string  director = "Darren Aronofsky";
         }
     }
 }
