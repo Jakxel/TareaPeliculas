@@ -13,7 +13,6 @@ namespace Pelicula
         private string  director;
 
         private List<Actor> actores = new List<Actor>();
-        actor.add( new Actor("Ryan Gosling", 1980));
 
         //Constructores
         public Pelicula(){}
@@ -40,11 +39,15 @@ namespace Pelicula
     public class Actor
     {
         //Propiedades
+        string Nombre;
+        Int16 Año;
 
         //Constructores
-
-
+        public Actor(){}
+        public Actor(string Nombre, Int16 Año){this.Nombre=Nombre; this.Año=Año;}
         //Métodos 
+        public string GetNombre(){return Nombre;}
+        public void SetNombre(string nombre, string n) {nombre=n;}
         public void Imprime()
         {
             Console.WriteLine($"{Nombre} ({Año})");
